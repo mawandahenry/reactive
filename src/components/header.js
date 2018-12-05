@@ -2,6 +2,7 @@ import React from 'react';
 import Prp from 'prop-types';
 import 'react-bootstrap/css /bootstrap.min.css';
 
+
 const Header = (props) => {
 	return(
 
@@ -10,8 +11,8 @@ const Header = (props) => {
 <a href = "/" className = "navbar-brand">{props.branding}</a>
 <div>
 <ul className = "navbar-nav mr-auto">
-<li className = "nav-item"><a href = "/" className = "nav-link">Manage</a></li>
-<li className = "nav-item"><a href = "/" className = "nav-link">proc</a></li>
+<li className = "nav-item"><a href= "#" className = "nav-link">Home</a></li>
+<li className = "nav-item"><a href = "#" className = "nav-link">Contacts</a></li>
 <li className = "nav-item"><a href = "/" className = "nav-link">Dev</a></li>
 <li className = "nav-item"><a href = "/" className = "nav-link">fs</a></li>
 
@@ -19,8 +20,6 @@ const Header = (props) => {
 </div>
 </div>
 </nav>
-
-
 
 		);
 }
