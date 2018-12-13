@@ -1,6 +1,6 @@
 import React from 'react';
 import Prp from 'prop-types';
-import 'react-bootstrap/css /bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Header = (props) => {
