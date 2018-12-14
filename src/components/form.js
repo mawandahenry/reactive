@@ -22,7 +22,28 @@ onchange_func = e => {
     const {first, last, gender, age} = this.state;
     return (
       <div className = "row">
-      <div className = "formy col-6">
+      <div className = "formy col-3 ml-5">
+      <div className = "card">
+      <div className = "card-header">
+      <h3 className = "text-center">Side Menue</h3>
+      </div>
+      <div className = "card-body">
+       <table>
+       <tr>
+       <td>Add Contact <i className = "fa fa-envelope"></i></td>
+       </tr>
+      <tr>
+      <td>Edit Contact<i className = "fa fa-edit"></i></td>
+      </tr>
+         <tr>
+         <td>Delete Contact<i className = "fa fa-trash"></i></td>
+       </tr>
+       </table>
+      </div>
+      </div>
+
+      </div>
+      <div className = "col-4">
       <form role = "form">
       <div className ="form-group ml-5 mt-3" >
       <label forhtml = "firstname">firstname</label>
@@ -45,9 +66,9 @@ onchange_func = e => {
       <input className="btn btn-success ml-5 btn-lg" type="submit" name="send" value="Add" onClick = {(e) => this.props.fetch_data(this.state)}/>
       </div>
       </div>
-      <div className = "col-6">
+      <div className = "col-4">
       {this.props.user?<ul className = "list-group">{ this.props.user.map(user => {
-        return (<li key = {user.first} className = "list-group-item"><i className ="fas fa-caret-down"> {user.first} </i><span className = "btn btn-danger float-right" style = {{float: 'right'}}onClick = {(e) => this.props.delete_user(user.first)}>Delete</span></li>)
+        return (<li key = {user.first} className = "list-group-item"><i className ="fa fa-caret-down"> {user.first} </i><span className = "btn btn-danger float-right" style = {{float: 'right'}} onClick = {(e) => this.props.delete_user(user.first)}>Delete</span></li>)
       })
     }
     </ul>: <p>Waiting For names here</p>

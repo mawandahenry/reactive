@@ -14,11 +14,6 @@ render(){
 return (
 <div>
 <Header branding = "hello naco"/>
-<div>
-<button className = "btn btn-danger" onClick = {this.props.adding}> add++ </button> <br/>
-<button className = "btn btn-primary" onClick = {this.props.subtract}> Subtract </button>
-<p>{this.props.count.counter}</p>
-</div>
 <Form />
 	</div>
 );
