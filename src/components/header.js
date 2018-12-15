@@ -3,9 +3,10 @@ import Prp from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 const Header = (props) => {
 	return(
-<nav className="navbar navbar-expand-md navbar-light bg-info">
+<nav className="navbar navbar-expand-md navbar-light bg-info" >
 <div className = "container-fluid">
 <a href="#" className="navbar-brand">Sesnaco</a>
 <button type="button" className = "navbar-toggler" data-target = "navbarResponsive">

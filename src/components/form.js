@@ -2,7 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import {fetch_data, delete_user} from '../actions/';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-
+import {findDOMNode} from 'react-dom';
+import $ from 'jquery';
 class Form extends Component {
   constructor(props){
     super(props);
@@ -39,6 +40,7 @@ onchange_func = e => {
          <td>Delete Contact<i className = "fa fa-trash"></i></td>
        </tr>
        </table>
+
       </div>
       </div>
 
@@ -74,6 +76,7 @@ onchange_func = e => {
     </ul>: <p>Waiting For names here</p>
   }
       </div>
+
       </div>
     );
   }

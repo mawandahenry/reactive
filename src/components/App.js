@@ -4,7 +4,9 @@ import 'font-awesome/css/font-awesome.min.css';
 import {connect} from 'react-redux';
 import {addNumber,subtractNumber} from '../actions/';
 import {bindActionCreators} from 'redux';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Form from './form';
+import About from '../pages/pager';
 class App extends Component {
 	constructor(props){
 		super(props);
@@ -12,13 +14,17 @@ class App extends Component {
 
 render(){
 return (
+<Router>
 <div>
 <Header branding = "hello naco"/>
-<Form />
-	</div>
+<Switch>
+<Route exact path = "/" Component = {Form} />
+<Route exact path = "/about" Component = {About} />
+</Switch>
+</div>
+</Router>
 );
-	}
-
+}
 };
 
 
