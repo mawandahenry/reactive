@@ -1,14 +1,14 @@
 import React from 'react';
 import Prp from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Link} from 'react-router-dom';
 
 
 const Header = (props) => {
 	return(
 <nav className="navbar navbar-expand-md navbar-light bg-info" >
 <div className = "container-fluid">
-<a href="#" className="navbar-brand">Sesnaco</a>
+<Link to="/" className="navbar-brand">Sesnaco</Link>
 <button type="button" className = "navbar-toggler" data-target = "navbarResponsive">
 <span className = "navbar-toggler-icon">
 </span>
@@ -19,7 +19,7 @@ const Header = (props) => {
 <a href="#" className="nav-link">Hello</a>
 </li>
 <li className="nav-item">
-<a href="#" className="nav-link">Hello</a>
+<Link to="/forms" className="nav-link">Form</Link>
 </li>
 <li className="nav-item">
 <a href="#" className="nav-link">Hello</a>

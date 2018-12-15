@@ -30,6 +30,7 @@ onchange_func = e => {
       </div>
       <div className = "card-body">
        <table>
+       <tbody>
        <tr>
        <td>Add Contact <i className = "fa fa-envelope"></i></td>
        </tr>
@@ -39,6 +40,7 @@ onchange_func = e => {
          <tr>
          <td>Delete Contact<i className = "fa fa-trash"></i></td>
        </tr>
+       </tbody>
        </table>
 
       </div>
