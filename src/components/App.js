@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {addNumber,subtractNumber} from '../actions/';
 import {bindActionCreators} from 'redux';
 import {Switch, Route} from 'react-router-dom';
-import Input from './input';
+import Input from './contacts';
 import Form from './form';
 import About from '../pages/pager';
 

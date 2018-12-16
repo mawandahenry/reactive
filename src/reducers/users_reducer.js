@@ -2,7 +2,13 @@ import React from 'react';
 
 const init_state = {
   deleted: '',
-  my_users: []
+  my_users: [
+    {id: 1,name: 'mawanda henry',email: 'mawanda@gmail.com',phone: '0777-777-212' },
+      {id: 2,name: 'Tebandeke Denis',email: 'deno19@gmail.com',phone: '0772-077-212' },
+        {id: 1,name: 'Sseninde Jessy',email: 'wajessy@gmail.com',phone: '0782-47-212' },
+          {id: 1,name: 'Ssebanenya John ',email: 'Ssebs@gmail.com',phone: '0717-707-912' }
+
+  ]
 }
 
 
