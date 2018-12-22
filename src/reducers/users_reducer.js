@@ -1,30 +1,49 @@
+import {ADD_USER, DELETE_USER,FETCH_USERS,GET_CONTACT,UPDATE_CONTACT} from '../actions/typos';
 import React from 'react';
 
-const init_state = {
-  deleted: '',
-  my_users: [
-    {id: 1,name: 'mawanda henry',email: 'mawanda@gmail.com',phone: '0777-777-212' },
-      {id: 2,name: 'Tebandeke Denis',email: 'deno19@gmail.com',phone: '0772-077-212' },
-        {id: 1,name: 'Sseninde Jessy',email: 'wajessy@gmail.com',phone: '0782-47-212' },
-          {id: 1,name: 'Ssebanenya John ',email: 'Ssebs@gmail.com',phone: '0717-707-912' }
 
-  ]
+const initials = {
+  my_users:[
+    {id: 1, name: "mawanda Henry", phone: "077-666-999", email: "mawanda111@gmail.com"},
+      {id: 2, name: "wasswa Hezron", phone: "075-066-949", email: "hezronoal@gmail.com"}
+  ],
+  editor: {}
 }
 
-
-const User_reducer = (state = init_state, action)=>{
+const User_reducer = (state = initials, action) => {
   switch (action.type) {
-    case 'ADD_USER': {
-      return Object.assign({},state, {my_users:[...state.my_users,action.payload]})
+    case ADD_USER:{
+    return {
+      ...state,
+       my_users: [action.payload, ...state.my_users]
+    }
+  }
+  case FETCH_USERS:{
+  return {
+    ...state,
+     my_users: action.payload
+  }
+}
+case UPDATE_CONTACT:{
+return {
+  ...state,
+   my_users: state.my_users.map(user => user.id === action.payload.id? (user = action.payload): user)
+}
+}
+case GET_CONTACT:{
+return {
+  ...state,
+  editor: action.payload
+}
+}
+    case DELETE_USER:return {
+      ...state, my_users: state.my_users.filter(user => user.id !== action.payload)
+  }
+    default:
 
-  }
-  case 'DELETE_USER': {
-   const {my_users} = state;
-   const false_state = my_users.filter(name => name.first !== action.payload);
-   return Object.assign({}, state, {my_users: false_state})
-  }
-    default: return state;
+    return state;
 
   }
 }
+
 export default User_reducer;
