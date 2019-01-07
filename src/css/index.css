@@ -19,3 +19,11 @@ code {
 .tipsy{
   float: right;
 }
+.fav{
+  height: 400px;
+  overflow-y: scroll;
+}
+.xyz {
+  height: 600px;
+  overflow-y: scroll;
+}

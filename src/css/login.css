@@ -1,0 +1,36 @@
+body{
+
+
+
+}
+@media media screen and (max-width:480px ){
+  .stl{
+    width: auto;
+  }
+  body{
+    background-color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+
+  .stl{
+    color: red;
+    display: block;
+    width: auto;
+  }
+  .mr-x{
+    display: inline-block;
+  }
+  .tip{
+    display: block;
+  }
+}
+@media screen and (max-width:1024px){
+  
+  .mr-x{
+    float: right;
+  }
+}
+.xxl{
+  margin: auto;
+}

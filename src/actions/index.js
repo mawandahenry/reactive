@@ -37,3 +37,15 @@ export const update_contact = (contact) => async dispatch => {
     payload: res.data
   })
 }
+export const success_mess =(message)=> {
+  return {
+    type : 'SUCCESS',
+    payload: message
+  }
+}
+export const reset_mess =()=> {
+  return {
+    type : 'RESET',
+    payload: null
+  }
+}
