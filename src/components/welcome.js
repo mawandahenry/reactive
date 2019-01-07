@@ -81,7 +81,7 @@ class  Welcome extends Component {
 <table className = "table thead-dark">
   <thead>
     <tr>
-      <Link className="btn btn-danger" to = "/login">Go to Logout</Link>
+      <Link className="btn btn-danger" to = "/">Go to Logout</Link>
     </tr>
   </thead>
   <tbody>

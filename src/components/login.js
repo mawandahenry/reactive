@@ -5,7 +5,6 @@ import {compose} from 'redux';
 import {firebaseConnect, isLoaded, isEmpty} from 'react-redux-firebase';
 import '../css/login.css';
 import {Link} from 'react-router-dom';
-import RenderField from './renderField';
 import {Field,reduxForm} from 'redux-form';
 import Welcome from './welcome';
 
